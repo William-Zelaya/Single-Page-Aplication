@@ -1,0 +1,82 @@
+.home-page {
+  background-color: aqua; /* Color de fondo de la página principal */
+  min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+  display: flex; /* Usar flex para alinear el contenedor fijo y el contenido principal */
+}
+
+.left-container {
+  position: fixed; /* Fija el contenedor a la izquierda */
+  top: 0; /* Alinea al top */
+  left: 0; /* Alinea al lado izquierdo */
+  width: 250px; /* Ancho del contenedor */
+  height: 100vh; /* Llena toda la altura de la ventana */
+  background-color: black; /* Color de fondo del contenedor izquierdo */
+  padding: 20px; /* Espaciado interno */
+  color: white; /* Color del texto */
+  overflow-y: auto; /* Permite scroll si el contenido es más largo */
+}
+
+.main-content {
+  margin-left: 235px; /* Evita que se superponga al contenedor fijo */
+  padding: 20px; /* Espaciado alrededor del contenido principal */
+  height: 100vh; /* Asegura que el contenido principal ocupe toda la altura */
+  overflow-y: auto; /* Permite desplazamiento vertical en el contenido */
+}
+
+.home-page .search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.home-page .search-bar input {
+  padding-right: 40px; /* Espacio para el icono de búsqueda */
+}
+
+.home-page .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+.home-page .content {
+  text-align: left; /* Cambiado a izquierda */
+  margin-top: 0; /* Asegura que no haya margen superior */
+}
+
+.musician-gallery {
+  display: flex;
+  justify-content: flex-start; /* Alinea las imágenes desde el inicio */
+  margin-top: 5px; /* Espacio superior */
+  gap: 10px; /* Espacio entre imágenes */
+  overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+}
+
+.musician {
+  width: 135px; /* Ajusta según sea necesario */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  border-radius: 10px; /* Esquinas redondeadas */
+}
+
+.spotify-logo {
+  width: 40px; /* Ajusta el tamaño del logo */
+  height: auto;
+}
+
+.search-bar .login-icon {
+  width: 30px; /* Ajusta el tamaño del icono de inicio de sesión */
+  height: auto;
+  cursor: pointer;
+}
+
+.second-gallery {
+  margin-top: 30px; /* Espaciado para la segunda galería */
+}
+
+.modal-open .main-content {
+  pointer-events: none;
+  opacity: 0.5; /* Esto atenuará el contenido */
+}
+
